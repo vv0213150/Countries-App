@@ -4,10 +4,10 @@ const API = 'https://restcountries.com/v3.1/'
 
 export function useFetch() {
   const [data, setData] = React.useState([])
-  const [loading, setLoading] = React.useState(false)
+  // const [loading, setLoading] = React.useState(false)
 
   function fetchCountries(routes) {
-    setLoading(true)
+    // setLoading(true)
     fetch(`${API}${routes}`)
       .then(res => res.json())
       .then(data => {
@@ -26,14 +26,14 @@ export function useFetch() {
         console.log(error, 'error')
       })
       .finally(() => {
-        setLoading(false)
+        // setLoading(false)
       })  
   }
   console.log(data);
 
   return {
     data,
-    loading,
+    // loading,
     fetchCountries,
   }
 }

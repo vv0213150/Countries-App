@@ -8,7 +8,7 @@ const CountriesPage = () => {
   const {
     data,
     fetchCountries,
-    loading,
+    // loading,
   } = useFetch() // деструктуризация
 
   const [selectedRegion, setSelectedRegion] = React.useState('all')
@@ -18,10 +18,10 @@ const CountriesPage = () => {
 
   React.useEffect(() => {
     fetchCountries(selectedRegion)
-  }, [selectedRegion])
+  }, [selectedRegion,fetchCountries])
 
 
-  if(loading) return <p>loading...</p>
+  // if(loading) return <p>loading...</p>
 
   return (
     <div className={cls.countries_page}>

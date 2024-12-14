@@ -6,7 +6,7 @@ import { useFetch } from '../../api'
 const CountryPage = () => {
   const {
     fetchCountries,
-    loading,
+    // loading,
     data
   } = useFetch()
   
@@ -14,9 +14,9 @@ const CountryPage = () => {
 
   React.useEffect(() => {
     fetchCountries(`name/${params.name}`)
-  }, [])  
+  }, [fetchCountries, params.name])  
 
-  if(loading) return <p>loading...</p> 
+  // if(loading) return <p>loading...</p> 
 
   return (
     <div>
