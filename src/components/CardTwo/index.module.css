@@ -1,0 +1,103 @@
+h2 {
+    font-size: 1.5em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.btn {
+    margin: 30px 0 0 30px;
+    padding: 8px 35px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: none;
+    border: 2px solid blue;
+    cursor: pointer;
+    background: none;
+}
+
+.card {
+    width: 550px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin: 30px 160px;
+    gap: 60px;
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(128, 128, 128, 0.568);
+}
+
+.overflow_p {
+    overflow: scroll;
+    width: 200px;
+}
+
+.card_content_two {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+.card_content h1 {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 32px;
+}
+
+.card_content h2 {
+    padding: 9px 0;
+    font-size: 22px;
+    gap: 18px;
+    display: flex;
+    align-items: center;
+    
+}
+.card_content p {
+    color: rgb(126, 125, 125);
+    font-size: 20px;
+}
+
+.card_content a {
+    text-transform: uppercase;
+    color: rgb(58, 19, 93);
+}
+
+.card_content_two {
+    display: flex;
+    justify-content: center;
+}
+
+.settings_two {
+    margin-top: 30px;
+}
+.settings_two h2 {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 26px;
+}
+.settings_two p {
+    color: rgb(126, 125, 125);
+    font-size: 24px;
+}
+
+.settings_two h2 a {
+    color: rgb(58, 19, 93);
+    text-transform: uppercase;
+    text-decoration: none;
+}
